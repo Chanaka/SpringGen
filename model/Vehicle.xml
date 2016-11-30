@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCHEMA xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNSLocation='http://www.test.com/schemas/ModelClass.xsd'>
+	<MODELCLASS name="Vehicle" package="springgen.model" basePackage="springgen">
+	
+		<ATTRIBUTE name="RegistrationNumber"	type="String" />
+		<ATTRIBUTE name="EngineNumber"			type="String" />
+		<ATTRIBUTE name="ChasisNumber"			type="String" />
+	
+	</MODELCLASS>
+</SCHEMA>
