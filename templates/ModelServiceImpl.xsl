@@ -49,6 +49,18 @@ public class <xsl:value-of select="@name"/>ServiceImpl implements <xsl:value-of 
 		<xsl:value-of select="$modelName"/>Dao.save(<xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
 	}
 	
+	public void update(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>) {
+		<xsl:value-of select="$modelName"/>Dao.update(<xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	}
+
+	public void saveOrUpdate(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>) {
+		<xsl:value-of select="$modelName"/>Dao.saveOrUpdate(<xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	}
+
+	public void delete(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>) {
+		<xsl:value-of select="$modelName"/>Dao.delete(<xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	}
+	
 }
 </xsl:template>
 </xsl:stylesheet>

@@ -28,6 +28,12 @@ public interface <xsl:value-of select="@name"/>Dao
 	
 	void save(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
 	
+	void update(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	
+	void saveOrUpdate(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	
+	void delete(<xsl:value-of select="@name"/><xsl:text> </xsl:text><xsl:value-of select="concat(translate(substring(@name, 1, 1), $uppercase, $lowercase), substring(@name, 2))"/>);
+	
 }
 </xsl:template>
 </xsl:stylesheet>
